@@ -3,6 +3,8 @@ This is an interface for geting recent tweets from the Topical tweets Api
 
 Select a topic and the App will get the latest 10 tweets from the Api.
 
+### Demo 
+[View Live App](https://mysterious-plains-17104.herokuapp.com/)
 ## Configuring the Application
 Ruby version 3.1.2
 
