@@ -1,0 +1,12 @@
+<%= form_with url: tweets_path do |form| %>
+  <h3>Get the 10 most recent tweets on a topic</h3>
+  <div class="mb-3">
+    <%= 
+      form.select :hashtag, [["#healthcare", "healthcare"], ["#nasa", "nasa"], ["#opensource", "opensource"]], 
+      {:include_blank => "Choose a topic:"}, {:class => "form-select"} 
+    %>
+  </div>
+  <div class="mb-3">
+    <%= form.submit "Get Tweets", class: "btn btn-primary" %>
+  </div>
+<% end %>

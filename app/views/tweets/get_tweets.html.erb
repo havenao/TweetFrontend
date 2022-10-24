@@ -1,0 +1,17 @@
+<div class="container">
+  <h2 class="d-flex justify-content-center align-items-center">
+    Latest <%= @tweets[0][:tag] %> Tweets
+  </h2>
+  <ul class="list-group">
+    <% @tweets.each do |tweet| %>
+      <li class="list-group-item">
+        <div>      
+          <%= tweet[:text] %>
+        </div>
+        <div class="d-flex justify-content-end">
+          <a href="<%= tweet[:uri] %>">View on Twitter</a>  
+        </div>
+      </li>
+    <% end %>
+  </ul>
+</div>
